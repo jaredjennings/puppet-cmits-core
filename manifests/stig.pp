@@ -19,5 +19,6 @@
 # required fashion. If not, include "\verb!core::no!."
 
 class core::stig {
-    include "core::stig::${::osfamily}"
+    $lower_osfamily = downcase($::osfamily)
+    include "core::stig::${lower_osfamily}"
 }
