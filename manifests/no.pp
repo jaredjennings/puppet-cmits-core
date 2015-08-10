@@ -48,7 +48,7 @@ class core::no {
             }
         }
         'Darwin': {}
-        default: { unimplemented() }
+        default: { fail "unimplemented on ${::osfamily}" }
     }
 }
         
