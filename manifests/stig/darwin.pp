@@ -25,6 +25,6 @@ class core::stig::darwin {
 # \implements{mlionstig}{OSX8-00-01180}%
 # Ensure restrictive permissions on the centralized core dump data
 # directory.
-        mode => 0750,
+        mode => '0750',
     }
 }

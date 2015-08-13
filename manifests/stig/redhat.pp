@@ -83,10 +83,10 @@ AnalyzerActionsAndReporters",
 # their spirit.
     file {
         "/var/spool/abrt":
-            owner => abrt, group => 0, mode => 0600,
+            owner => abrt, group => 0, mode => '0600',
             recurse => true, recurselimit => 2;
         "/var/spool/abrt-upload":
-            owner => abrt, group => 0, mode => 0600,
+            owner => abrt, group => 0, mode => '0600',
             recurse => true, recurselimit => 2;
     }
 # \implements{unixsrg}{GEN003505} Remove extended ACLs on ABRT directories.
